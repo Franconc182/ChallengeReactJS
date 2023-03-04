@@ -12,15 +12,15 @@ function App() {
     });
   }
 
-  useEffect(() =>{
+  useEffect(() =>{ //useEffect para que se ejecute la funcion y se vaya actualizando
     handleSubmit()
   }, []);
 
   return (
     <section className="main-container">
       <div className="div-container">
-        <span>{cat.data.fact} </span>
-        <img className="img-animal" src={cat.data.image} alt="gato" />
+        <span>{cat?.data.fact} </span>
+        <img className="img-animal" src={cat?.data.image} alt="gato" />
         <button onClick={handleSubmit}>Next fact</button>
       </div>
     </section>
